@@ -10,4 +10,8 @@ const searchWord = () => {
     paragraphElem.innerHTML = paragraphElem.textContent.replace(searchRegex ,item => `<mark>${item}</mark>`)
 }
 
-searchBtnElem.addEventListener("click" , searchWord)
+//The first solution
+// searchBtnElem.addEventListener("click" , searchWord)
+
+//The second solution
+searchInputElem.addEventListener('keyup' , searchWord)
